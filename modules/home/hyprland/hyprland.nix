@@ -79,11 +79,11 @@ in
 
       general = {
         "$modifier" = "SUPER";
-        layout = "dwindle";
+        layout = "master";
         gaps_in = 6;
         gaps_out = 8;
         border_size = 2;
-        resize_on_border = true;
+        resize_on_border = false;
         "col.active_border" =
           "rgb(${config.lib.stylix.colors.base08}) rgb(${config.lib.stylix.colors.base0C}) 45deg";
         "col.inactive_border" = "rgb(${config.lib.stylix.colors.base01})";
@@ -152,8 +152,10 @@ in
 
       master = {
         new_status = "master";
-        new_on_top = 1;
-        mfact = 0.5;
+        new_on_top = false;
+        mfact = 0.3;
+        orientation = "center";
+        allow_small_split = false;
       };
 
       # Ensure Xwayland windows render at integer scale; compositor scales them
