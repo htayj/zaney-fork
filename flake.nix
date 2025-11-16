@@ -10,6 +10,10 @@
     nvf.url = "github:notashelf/nvf";
     stylix.url = "github:danth/stylix/release-25.05";
     nix-flatpak.url = "github:gmodena/nix-flatpak?ref=latest";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Hypersysinfo  (Optional)
     #hyprsysteminfo.url = "github:hyprwm/hyprsysteminfo";
@@ -30,24 +34,26 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    host = "nixos-desktop";
-    profile = "nvidia";
+      host = "nixos-desktop";
+      profile = "nvidia";
       username = "tay";
 
       # Deduplicate nixosConfigurations while preserving the top-level 'profile'
-      mkNixosConfig = gpuProfile: nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = {
-          inherit inputs;
-          inherit username;
-          inherit host;
-          inherit profile; # keep using the let-bound profile for modules/scripts
+      mkNixosConfig =
+        gpuProfile:
+        nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = {
+            inherit inputs;
+            inherit username;
+            inherit host;
+            inherit profile; # keep using the let-bound profile for modules/scripts
+          };
+          modules = [
+            ./profiles/${gpuProfile}
+            nix-flatpak.nixosModules.nix-flatpak
+          ];
         };
-        modules = [
-          ./profiles/${gpuProfile}
-          nix-flatpak.nixosModules.nix-flatpak
-        ];
-      };
     in
     {
       nixosConfigurations = {

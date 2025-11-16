@@ -45,6 +45,7 @@
     rclone # download tool
     vlc # disk playback
     emacs # primary text editor
+    nil # lsp for nix files
     weechat # irc
     #irssi -- need to make a wrapper with these
     # libnotify
