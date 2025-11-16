@@ -1,5 +1,6 @@
 # Tmux is a terminal multiplexer that allows you to run multiple terminal sessions in a single window.
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   programs.tmux = {
     enable = true;
     mouse = true;
@@ -9,7 +10,7 @@
     keyMode = "vi";
 
     extraConfig = ''
-              set-option -g status-position top
+              set-option -g status-position bottom
 
               #set -g default-terminal "screen-256color"
               set-option -g history-limit 5000

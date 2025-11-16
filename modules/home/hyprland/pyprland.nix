@@ -13,7 +13,7 @@
     command = "kitty --class kitty-dropterm"
     class = "kitty-dropterm"
     size = "70% 70%"
-    margin = 38
+    margin = 0
     max_size = "5120px 100%"
 
     [scratchpads.irc]
