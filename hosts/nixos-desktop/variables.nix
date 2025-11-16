@@ -27,12 +27,9 @@
   # You can configure multiple monitors.
   # Inside the quotes, create a new line for each monitor.
   extraMonitorSettings = "
-    monitor = DP-1,5120x1440@240,auto,1
-    monitor = HDMI-A-1,800x600@85.06,auto,1
+    monitor = DP-1,5120x1440@240,0x0,1
+    monitor = HDMI-A-1,800x600@85.06,4320x1440,1
   ";
-  #  extraMonitorSettings = "
-  #
-  #    ";
 
   # Waybar Settings
   clock24h = false;
