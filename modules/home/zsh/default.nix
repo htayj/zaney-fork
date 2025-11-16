@@ -1,8 +1,10 @@
-{ profile
-, pkgs
-, lib
-, ...
-}: {
+{
+  profile,
+  pkgs,
+  lib,
+  ...
+}:
+{
   imports = [
     ./zshrc-personal.nix
   ];
@@ -12,7 +14,14 @@
     autosuggestion.enable = true;
     syntaxHighlighting = {
       enable = true;
-      highlighters = [ "main" "brackets" "pattern" "regexp" "root" "line" ];
+      highlighters = [
+        "main"
+        "brackets"
+        "pattern"
+        "regexp"
+        "root"
+        "line"
+      ];
     };
     historySubstringSearch.enable = true;
 
@@ -53,6 +62,7 @@
       sv = "sudo nvim";
       v = "nvim";
       c = "clear";
+      rb = "zcli rebuild";
       fr = "nh os switch --hostname ${profile}";
       fu = "nh os switch --hostname ${profile} --update";
       zu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";
