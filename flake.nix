@@ -30,9 +30,9 @@
     }@inputs:
     let
       system = "x86_64-linux";
-    host = "zaneyos-24-vm";
-    profile = "vm";
-      username = "dwilliams";
+    host = "nixos-desktop";
+    profile = "nvidia";
+      username = "tay";
 
       # Deduplicate nixosConfigurations while preserving the top-level 'profile'
       mkNixosConfig = gpuProfile: nixpkgs.lib.nixosSystem {

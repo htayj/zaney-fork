@@ -8,6 +8,7 @@
     };
     logitech.wireless.enable = false;
     logitech.wireless.enableGraphical = false;
+    opentabletdriver.enable = true;
     graphics.enable = true;
     enableRedistributableFirmware = true;
     keyboard.qmk.enable = true;

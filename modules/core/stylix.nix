@@ -1,35 +1,63 @@
-{ pkgs
-, host
-, ...
+{
+  pkgs,
+  host,
+  ...
 }:
 let
   inherit (import ../../hosts/${host}/variables.nix) stylixImage;
+  importYaml =
+    file:
+    builtins.fromJSON (
+      builtins.readFile (
+        pkgs.runCommandNoCC "yaml->json"
+          {
+            buildInputs = [ pkgs.yj ];
+          }
+          ''
+            ( ${pkgs.yj}/bin/yj < ${file} | sed 's/"#/"/g' )> $out
+          ''
+      )
+    );
+  tokyoDark = importYaml (pkgs.base16-schemes + "/share/themes/synth-midnight-dark.yaml");
+
 in
 {
   # Styling Options
   stylix = {
     enable = true;
+    autoEnable = true;
     image = stylixImage;
+    base16Scheme = (tokyoDark).palette;
     # base16Scheme = {
-    #   base00 = "282936";
-    #   base01 = "3a3c4e";
-    #   base02 = "4d4f68";
-    #   base03 = "626483";
-    #   base04 = "62d6e8";
-    #   base05 = "e9e9f4";
-    #   base06 = "f1f2f8";
-    #   base07 = "f7f7fb";
-    #   base08 = "ea51b2";
-    #   base09 = "b45bcf";
-    #   base0A = "00f769";
-    #   base0B = "ebff87";
-    #   base0C = "a1efe4";
-    #   base0D = "62d6e8";
-    #   base0E = "b45bcf";
-    #   base0F = "00f769";
+    #   base00 = "#111111";
+    #   base01 = "#333333";
+    #   base02 = "#555555";
+    #   base03 = "#777777";
+    #   base04 = "#999999";
+    #   base05 = "#aaaaaa";
+    #   base06 = "#cccccc";
+    #   base07 = "#ffffff";
+    #   base08 = "#aa0000";
+    #   base09 = "#aa5555";
+    #   base0A = "#aa5500";
+    #   base0B = "#00aa00";
+    #   base0C = "#00aaaa";
+    #   base0D = "#0000aa";
+    #   base0E = "#aa00aa";
+    #   base0F = "#555500";
+    #   base10 = "#050505";
+    #   base11 = "#000000";
+    #   base12 = "#ff5555";
+    #   base13 = "#ffff55";
+    #   base14 = "#55ff55";
+    #   base15 = "#55ffff";
+    #   base16 = "#5555ff";
+    #   base17 = "#ff55ff";
     # };
     polarity = "dark";
     opacity.terminal = 1.0;
+    targets.gtk.enable = true;
+    # targets.emacs.enable = true;
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";

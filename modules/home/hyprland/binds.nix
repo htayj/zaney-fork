@@ -1,7 +1,6 @@
 { host, ... }:
 let
-  inherit
-    (import ../../../hosts/${host}/variables.nix)
+  inherit (import ../../../hosts/${host}/variables.nix)
     browser
     terminal
     ;
@@ -10,7 +9,7 @@ in
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$modifier,Return,exec,${terminal}"
-      "$modifier,K,exec,list-keybinds"
+      #"$modifier,K,exec,list-keybinds"
       "$modifier ,R,exec,rofi-launcher"
       "$modifier SHIFT,Return,exec,rofi-launcher"
       "$modifier SHIFT,W,exec,web-search"
@@ -33,7 +32,9 @@ in
       "$modifier,Q,killactive,"
       "$modifier,P,pseudo,"
       "$modifier,V,exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
-      "$modifier SHIFT,I,togglesplit,"
+      "$modifier,semicolon,movetoworkspace,irc"
+      "$modifier CTRL,I,togglesplit,"
+      "$modifier ALT,I,swapsplit,"
       "$modifier,F,fullscreen,"
       "$modifier SHIFT,F,togglefloating,"
       "$modifier ALT,F,workspaceopt, allfloat"
@@ -88,8 +89,6 @@ in
       "$modifier CONTROL,left,workspace,e-1"
       "$modifier,mouse_down,workspace, e+1"
       "$modifier,mouse_up,workspace, e-1"
-      "ALT,Tab,cyclenext"
-      "ALT,Tab,bringactivetotop"
       ",XF86AudioRaiseVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ",XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       " ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"

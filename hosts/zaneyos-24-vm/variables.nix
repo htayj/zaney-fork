@@ -38,7 +38,7 @@
   # This does NOT install your browser
   # You need to install it by adding it to the `packages.nix`
   # or as a flatpak
-  browser = "brave";
+  browser = "firefox";
 
   # Available Options:
   # Kitty, ghostty, wezterm, aalacrity
