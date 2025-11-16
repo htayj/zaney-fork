@@ -1,9 +1,9 @@
 {
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "tay";
+  gitUsername = "htayj";
   gitEmail = "hardy.taylor.j@gmail.com";
 
-  # Set Displau Manager
+  # Set Display Manager
   # `tui` for Text login
   # `sddm` for graphical GUI (default)
   # SDDM background is set with stylixImage
