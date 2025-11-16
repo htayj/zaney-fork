@@ -35,14 +35,14 @@
     #aider-chat # AI in terminal (Optional: Client only)
     amfora # Fancy Terminal Browser For Gemini Protocol
     appimage-run # Needed For AppImage Support
-    firefox # Brave Browser
-    chromium # Brave Browser
+    firefox # Main Browser
+    chromium # Alt Browser
     brightnessctl # For Screen Brightness Control
-    vial
+    vial # keyboad editor
     makemkv # video disk backups
-    mkvtoolnix
-    dvdbackup
-    rclone
+    mkvtoolnix # remux tool
+    dvdbackup # alt disk backup tool for full VOB backups
+    rclone # download tool
     vlc # disk playback
     emacs # primary text editor
     weechat # irc
@@ -79,19 +79,20 @@
     libnotify # For Notifications
     lm_sensors # Used For Getting Hardware Temps
     lolcat # Add Colors To Your Terminal Command Output
-    base16-schemes
-    yj
-    yq
-    jq
-    slack
-    irssi
+    base16-schemes # color schemes for stylx
+    yj # yaml->json
+    yq # yaml query shell util
+    jq # json query shell util
+    xq # xml query shell util
+    slack # modern professional chat
+    irssi # irc
     lshw # Detailed Hardware Information
     mpv # Incredible Video Player
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
     nwg-displays # configure monitor configs via GUI
     onefetch # provides zsaneyos build info on current system
-    neofetch
+    neofetch # alt fetch program
     pavucontrol # For Editing Audio Levels & Devices
     pciutils # Collection Of Tools For Inspecting PCI Devices
     picard # For Changing Music Metadata & Getting Cover Art
@@ -100,9 +101,9 @@
     rhythmbox # audio player
     ripgrep # Improved Grep
     socat # Needed For Screenshots
-    signal-desktop
-    vesktop
-    screen
+    signal-desktop # encrypted chat
+    vesktop # discord
+    screen # main terminal multiplexer
     unrar # Tool For Handling .rar Files
     unzip # Tool For Handling .zip Files
     usbutils # Good Tools For USB Devices
