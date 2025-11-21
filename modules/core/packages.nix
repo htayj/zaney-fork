@@ -51,6 +51,12 @@
     emacs # primary text editor
     nil # lsp for nix files
     weechat # irc
+    xsane # scanning
+    naps2 # alt scanning
+    tesseract5 # ocr
+    imagemagickBig # image manipulation
+    imv # minimal image viewer
+    #hplip # hp printer/scanner drivers
     #irssi -- need to make a wrapper with these
     # libnotify
     # perl538Packages.Glib
