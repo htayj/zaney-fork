@@ -95,6 +95,7 @@
     yq # yaml query shell util
     jq # json query shell util
     xq # xml query shell util
+    inputs.backports.legacyPackages.${pkgs.system}.greaseweazle # floppy backup
     slack # modern professional chat
     irssi # irc
     lshw # Detailed Hardware Information
