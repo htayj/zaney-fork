@@ -9,6 +9,7 @@ in
     ./env.nix
     ./exec-once.nix
     ./hypridle.nix
+    ./swayimg.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./pyprland.nix

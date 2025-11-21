@@ -14,10 +14,12 @@ in
 {
   home.packages = with pkgs; [
     swww
+    swayimg
     grim
     slurp
     wl-clipboard
     swappy
+    imv
     ydotool
     hdrop
     hyprpolkitagent

@@ -32,6 +32,7 @@ with lib;
           "temperature"
           "disk"
           "hyprland/workspaces"
+          "hyprland/window"
         ];
         modules-right = [
           "pulseaudio"
