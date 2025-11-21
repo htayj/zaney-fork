@@ -123,5 +123,6 @@
     waypaper # Change wallpaper
     wget # Tool For Fetching Files With Links
     ytmdl # Tool For Downloading Audio From YouTube
+    np2kai # pc98 emulator
   ];
 }
