@@ -34,6 +34,10 @@
 
     #aider-chat # AI in terminal (Optional: Client only)
     amfora # Fancy Terminal Browser For Gemini Protocol
+    inputs.custompkgs.packages.${pkgs.system}.pc98ripper
+    inputs.custompkgs.packages.${pkgs.system}.dectalk
+    inputs.custompkgs.packages.${pkgs.system}.hxcfloppy
+    #pc98ripper
     appimage-run # Needed For AppImage Support
     firefox # Main Browser
     chromium # Alt Browser

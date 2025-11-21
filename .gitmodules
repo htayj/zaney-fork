@@ -1,0 +1,3 @@
+[submodule "custompkgs"]
+	path = custompkgs
+	url = https://github.com/htayj/custom-nix-pkgs
