@@ -6,6 +6,11 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     emacsOverlay.url = "github:nix-community/emacs-overlay";
     backports.url = "github:nixos/nixpkgs?ref=nixos-unstable";

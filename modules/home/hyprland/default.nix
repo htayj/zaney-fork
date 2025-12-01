@@ -11,6 +11,7 @@ in
     ./hypridle.nix
     ./swayimg.nix
     ./hyprland.nix
+    # ./hyprnstack.nix
     ./hyprlock.nix
     ./pyprland.nix
     ./windowrules.nix

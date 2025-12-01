@@ -1,4 +1,5 @@
 {
+  inputs,
   host,
   config,
   pkgs,
@@ -40,7 +41,10 @@ in
   };
   wayland.windowManager.hyprland = {
     enable = true;
-    package = pkgs.hyprland;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
     systemd = {
       enable = true;
       enableXdgAutostart = true;
@@ -81,7 +85,7 @@ in
 
       general = {
         "$modifier" = "SUPER";
-        layout = "master";
+        layout = "nstack";
         gaps_in = 6;
         gaps_out = 8;
         border_size = 2;
@@ -164,8 +168,26 @@ in
       xwayland = {
         force_zero_scaling = true;
       };
+      plugin = {
+        nstack = {
+          layout = {
+            orientation = "right";
+            new_on_top = 0;
+            new_is_master = 0;
+            no_gaps_when_only = 0;
+            special_scale_factor = 0.8;
+            inherit_fullscreen = 1;
+            stacks = 4;
+            center_single_master = 0;
+            mfact = 0.5;
+            single_mfact = 0.5;
+          };
+        };
+      };
     };
-
+    plugins = with inputs.hyprland-plugins.packages.${pkgs.stdenv.hostPlatform.system}; [
+      (pkgs.callPackage ./hyprnstack.nix { })
+    ];
     extraConfig = "
       monitor=,preferred,auto,auto
       monitor=Virtual-1,1920x1080@60,auto,1
