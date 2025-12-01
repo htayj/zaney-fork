@@ -115,6 +115,7 @@
     jq # json query shell util
     xq # xml query shell util
     zip
+    sunshine
     nix-index
     nushell
     nushellPlugins.query

@@ -27,6 +27,8 @@
   ];
   boot.extraModulePackages = [ ];
 
+  boot.kernelParams = [ "video=DP-3:3048x2032R@60D" ]; # virtual monitor for sunshine
+
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/98786fd8-032c-4c38-8c1d-f397ba6dcf42";
     fsType = "ext4";
