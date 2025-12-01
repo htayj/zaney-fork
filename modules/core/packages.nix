@@ -58,18 +58,22 @@
     brightnessctl # For Screen Brightness Control
     vial # keyboad editor
     makemkv # video disk backups
+    handbrake # gui video encoder
     mkvtoolnix # remux tool
     dvdbackup # alt disk backup tool for full VOB backups
     rclone # download tool
     vlc # disk playback
     emacs # primary text editor
-    nil # lsp for nix files
     weechat # irc
     xsane # scanning
+    deskew
     naps2 # alt scanning
     tesseract5 # ocr
     imagemagickBig # image manipulation
     imv # minimal image viewer
+    guix
+    testdisk
+    mktorrent
     #hplip # hp printer/scanner drivers
     #irssi -- need to make a wrapper with these
     # libnotify
@@ -85,12 +89,13 @@
     duf # Utility For Viewing Disk Usage In Terminal
     dysk # Disk space util nice formattting
     eza # Beautiful ls Replacement
-    ffmpeg # Terminal Video / Audio Editing
+    ffmpeg-full # Terminal Video / Audio Editing
     file-roller # Archive Manager
     gedit # Simple Graphical Text Editor
     #gemini-cli # CLI AI client ONLY (optional)
     gimp # Great Photo Editor
     krita # digital illustration
+    frigate # ai video clipper
     glxinfo # needed for inxi diag util
     greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
@@ -109,6 +114,11 @@
     yq # yaml query shell util
     jq # json query shell util
     xq # xml query shell util
+    zip
+    nix-index
+    nushell
+    nushellPlugins.query
+    nushellPlugins.net
     inputs.backports.legacyPackages.${pkgs.system}.greaseweazle # floppy backup
     slack # modern professional chat
     irssi # irc
