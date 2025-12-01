@@ -4,6 +4,8 @@
     # Allow user access to some USB devices.                                          
     SUBSYSTEM=="usb", ATTR{idVendor}=="03f0", ATTR{idProduct}=="6e12", TAG+="uaccess", MODE="0664", 
   '';
+  services.udisks2.enable = true;
+
   hardware = {
     sane = {
       enable = true;
