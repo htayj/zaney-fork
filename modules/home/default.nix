@@ -26,6 +26,7 @@ in
     ./fzf.nix
     ./gh.nix
     ./git.nix
+    # ./emacs.nix
     ./gtk.nix
     ./htop.nix
     ./hyprland

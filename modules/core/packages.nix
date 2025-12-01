@@ -25,6 +25,9 @@
       enableSSHSupport = true;
     };
   };
+  nixpkgs.overlays = [
+    (import inputs.emacsOverlay)
+  ];
 
   nixpkgs.config.allowUnfree = true;
 
@@ -40,6 +43,17 @@
     #pc98ripper
     appimage-run # Needed For AppImage Support
     firefox # Main Browser
+    #emacs
+    (emacsWithPackagesFromUsePackage {
+      config = ~/.emacs.d/init.el;
+      defaultInitFile = true;
+      package = emacs-git;
+      alwaysEnsure = true;
+      extraEmacsPackages = epkgs: [
+        epkgs.treesit-grammars.with-all-grammars
+        nil # lsp for nix files
+      ];
+    })
     chromium # Alt Browser
     brightnessctl # For Screen Brightness Control
     vial # keyboad editor

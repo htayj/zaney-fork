@@ -7,6 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    emacsOverlay.url = "github:nix-community/emacs-overlay";
     backports.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     custompkgs.url = "git+file:///home/tay/zaneyos/custompkgs/";
     custompkgs.inputs.nixpkgs.follows = "nixpkgs";
