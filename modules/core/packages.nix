@@ -40,6 +40,7 @@
     inputs.custompkgs.packages.${pkgs.system}.pc98ripper
     inputs.custompkgs.packages.${pkgs.system}.dectalk
     inputs.custompkgs.packages.${pkgs.system}.hxcfloppy
+    inputs.custompkgs.packages.${pkgs.system}.fluxengine
     #pc98ripper
     appimage-run # Needed For AppImage Support
     firefox # Main Browser
