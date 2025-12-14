@@ -159,6 +159,7 @@
     v4l-utils # Used For Things Like OBS Virtual Camera
     waypaper # Change wallpaper
     wget # Tool For Fetching Files With Links
+    aria2
     ytmdl # Tool For Downloading Audio From YouTube
     np2kai # pc98 emulator
   ];
