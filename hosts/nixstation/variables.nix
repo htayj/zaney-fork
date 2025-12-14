@@ -13,7 +13,7 @@
   tmuxEnable = false;
   alacrittyEnable = false;
   weztermEnable = false;
-  ghosttyEnable = false;
+  ghosttyEnable = true;
   vscodeEnable = false;
   helixEnable = false;
   #To install rebuild, then run zcli doom install
