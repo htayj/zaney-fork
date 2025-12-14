@@ -82,6 +82,11 @@
     # perl538Packages.HTMLParser
     # perl540Packages.HTMLParser
     #claude-code # Claude code terminal AI (Optional: Client only)
+    qflipper
+    hackrf
+    soapyhackrf
+    cubicsdr
+    gnuradio
     cliphist # Clipboard manager using rofi menu
     cmatrix # Matrix Movie Effect In Terminal
     cowsay # Great Fun Terminal Program
