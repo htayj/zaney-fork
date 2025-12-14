@@ -5,6 +5,8 @@
     SUBSYSTEM=="usb", ATTR{idVendor}=="03f0", ATTR{idProduct}=="6e12", TAG+="uaccess", MODE="0664", 
   '';
   services.udisks2.enable = true;
+  services.usbmuxd.enable = true;
+  services.usbmuxd.package = pkgs.usbmuxd2;
 
   hardware = {
     sane = {

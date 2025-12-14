@@ -145,6 +145,8 @@
     socat # Needed For Screenshots
     signal-desktop # encrypted chat
     vesktop # discord
+    ntfsprogs
+    gparted
     screen # main terminal multiplexer
     unrar # Tool For Handling .rar Files
     unzip # Tool For Handling .zip Files
