@@ -126,6 +126,9 @@
     nushellPlugins.query
     nushellPlugins.net
     inputs.backports.legacyPackages.${pkgs.system}.greaseweazle # floppy backup
+    libimobiledevice # ibad tools
+    ifuse # optional, to mount using 'ifuse'
+    # inputs.backports.legacyPackages.${pkgs.system}.winboat # windows virt
     slack # modern professional chat
     irssi # irc
     lshw # Detailed Hardware Information
