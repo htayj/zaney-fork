@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   # Only enable either docker or podman -- Not both
   virtualisation = {
     docker = {
@@ -15,11 +16,13 @@
       enable = false;
       enableExtensionPack = true;
     };
+    spiceUSBRedirection.enable = true;
   };
 
   programs = {
-    virt-manager.enable = false;
+    virt-manager.enable = true;
   };
+  users.groups.libvirtd.members = [ "tay" ];
 
   environment.systemPackages = with pkgs; [
     virt-viewer # View Virtual Machines
