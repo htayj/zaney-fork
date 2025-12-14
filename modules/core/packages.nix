@@ -162,5 +162,7 @@
     aria2
     ytmdl # Tool For Downloading Audio From YouTube
     np2kai # pc98 emulator
+    pnpm
+    typescript-language-server
   ];
 }
