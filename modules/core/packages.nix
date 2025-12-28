@@ -79,6 +79,7 @@
     tesseract5 # ocr
     imagemagickBig # image manipulation
     imv # minimal image viewer
+    nsxiv
     guix
     testdisk
     mktorrent
