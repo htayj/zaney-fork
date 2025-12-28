@@ -42,7 +42,6 @@ in
     notify-desktop
     hydroxide
     inputplug
-
     xss-lock
     xlockmore
     pavucontrol
@@ -51,6 +50,7 @@ in
     mpc-cli
     ncmpcpp
     mpdris2
+    stumpish
   ];
 
 }
