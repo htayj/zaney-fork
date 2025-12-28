@@ -1,7 +1,7 @@
 # Eza is a ls replacement
 {
   programs.eza = {
-    enable = true;
+    enable = false;
     icons = "auto";
     enableBashIntegration = true;
     enableZshIntegration = true;
