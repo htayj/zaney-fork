@@ -107,7 +107,7 @@
     #gemini-cli # CLI AI client ONLY (optional)
     gimp # Great Photo Editor
     krita # digital illustration
-    frigate # ai video clipper
+    #frigate # ai video clipper
     glxinfo # needed for inxi diag util
     greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
@@ -133,6 +133,7 @@
     nushellPlugins.query
     nushellPlugins.net
     inputs.backports.legacyPackages.${pkgs.system}.greaseweazle # floppy backup
+    inputs.backports.legacyPackages.${pkgs.system}.yt-dlp
     libimobiledevice # ibad tools
     ifuse # optional, to mount using 'ifuse'
     # inputs.backports.legacyPackages.${pkgs.system}.winboat # windows virt
