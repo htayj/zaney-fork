@@ -1,7 +1,7 @@
 { profile, ... }:
 {
   programs.bash = {
-    enable = false;
+    enable = true;
     enableCompletion = true;
     initExtra = ''
       fastfetch
@@ -13,6 +13,7 @@
       sv = "sudo nvim";
       rb = "zcli rebuild";
       rbi = "zcli rebuild -- --impure";
+      ns = "nix search nixpkgs";
       fr = "nh os switch --hostname ${profile}";
       fu = "nh os switch --hostname ${profile} --update";
       zu = "sh <(curl -L https://gitlab.com/Zaney/zaneyos/-/releases/latest/download/install-zaneyos.sh)";
