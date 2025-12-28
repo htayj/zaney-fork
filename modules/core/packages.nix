@@ -28,6 +28,12 @@
   nixpkgs.overlays = [
     (import inputs.emacsOverlay)
   ];
+  documentation = {
+    enable = true;
+    man.enable = true;
+    info.enable = true;
+    dev.enable = true;
+  };
 
   nixpkgs.config.allowUnfree = true;
 
@@ -174,5 +180,6 @@
     wineWowPackages.stable
     winetricks
     xorg.xmodmap
+    xorg.xorgdocs
   ];
 }
