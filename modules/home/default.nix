@@ -44,6 +44,7 @@ in
     ./stylix.nix
     ./swappy.nix
     ./swaync.nix
+    ./xterm.nix
     ./tealdeer.nix
     ./virtmanager.nix
     waybarChoice

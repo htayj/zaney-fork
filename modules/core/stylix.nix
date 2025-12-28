@@ -57,12 +57,13 @@ in
     polarity = "dark";
     opacity.terminal = 1.0;
     targets.gtk.enable = true;
+    # targets.xresources.enable = false;
     # targets.emacs.enable = true;
-    cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-      size = 24;
-    };
+    # cursor = {
+    #   package = pkgs.bibata-cursors;
+    #   name = "Bibata-Modern-Ice";
+    #   size = 24;
+    # };
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.jetbrains-mono;

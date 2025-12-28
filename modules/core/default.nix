@@ -25,6 +25,7 @@ in
     ./services.nix
     ./steam.nix
     ./stylix.nix
+    ./stumpwm.nix
     ./syncthing.nix
     ./system.nix
     ./thunar.nix

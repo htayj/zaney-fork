@@ -1,0 +1,66 @@
+! see also /usr/share/X11/app-deafaults/XTerm
+
+! ========= fonts =========
+! *fontMenu*fontdefault*Label: vt220_20pt
+! *VT100.font: -digital-vt220-medium-r-normal-80col-20-200-75-75-*-100-iso10646-1
+! *VT100.wideFont: -gnu-unifont-medium-r-*-*-16-*-*-*-*-*-iso10646-*
+
+! *fontMenu*font1*Label: uniscii
+! *VT100.font1: -unscii-*-*-*-*-full-16-*-*-*-*-*-iso10646-*
+
+! *fontMenu*font2*Label: vt220_40pt
+! *VT100.font2: -digital-vt220-medium-r-normal-80col-40-*-*-*-*-*-iso10646-1
+
+! === Xterm ===
+! clipboard
+XTerm*selectToClipboard: true
+
+! key behavior
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+XTerm.vt100.saveLines: 4096
+XTerm.vt100.metaSendsEscape: true
+
+! colors
+*background: rgb:00/00/00
+*foreground: #aaaaaa
+*color0: #000000
+*color1: #aa0000
+*color2: #00aa00
+*color3: #aa5500
+*color4: #0000aa
+*color5: #aa00aa
+*color6: #00aaaa
+*color7: #aaaaaa
+*color8: #555555
+*color9: #ff5555
+*color10: #55ff55
+*color11: #ffff55
+*color12: #5555ff
+*color13: #ff55ff
+*color14: #55ffff
+*color15: #ffffff
+
+*color16: #ea770d
+*color17: #cd6320
+*color18: #1a1b1c
+*color19: #28292a
+*color20: #a3a5a6
+*color21: #cfd1d2
+
+! cursor 
+*cursorColor: #c1c3c4
+Xcursor.size: 24
+Xcursor.theme: Bibata-Modern-Ice
+
+! enable sixel
+xterm*decTerminalID: 340
+
+! fontDoublesize (class FontDoublesize)
+*Xft.dpi: 116
+
+! font
+*.faceName: JetBrains Mono
+*.faceSize: 12
+*.renderFont: true
+

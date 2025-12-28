@@ -4,7 +4,7 @@
   programs.tmux = {
     enable = true;
     mouse = true;
-    shell = "${pkgs.zsh}/bin/zsh";
+    shell = "${pkgs.bash}/bin/bash";
     prefix = "C-a";
     terminal = "kitty";
     keyMode = "vi";
@@ -94,7 +94,7 @@
         -d "#{pane_current_path}" \
         -w 75% \
         -h 75% \
-        -E "zsh"
+        -E "bash"
 
       ##### Display Menu #####
 

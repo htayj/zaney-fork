@@ -163,6 +163,16 @@
     ytmdl # Tool For Downloading Audio From YouTube
     np2kai # pc98 emulator
     pnpm
+    zsh
+    rename
     typescript-language-server
+    rofi
+    xorg.xev
+    xdotool
+    kdePackages.okular
+    wine
+    wineWowPackages.stable
+    winetricks
+    xorg.xmodmap
   ];
 }

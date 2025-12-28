@@ -47,7 +47,7 @@ in
       "wheel" # subdo access
       "vboxusers" # Virtual Box
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.bash;
     ignoreShellProgramCheck = true;
   };
   nix.settings.allowed-users = [ "${username}" ];
