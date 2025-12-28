@@ -31,6 +31,7 @@
   documentation = {
     enable = true;
     man.enable = true;
+    man.generateCaches = true;
     info.enable = true;
     dev.enable = true;
   };
