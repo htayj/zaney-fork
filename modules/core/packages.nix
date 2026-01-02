@@ -45,7 +45,7 @@
     #aider-chat # AI in terminal (Optional: Client only)
     amfora # Fancy Terminal Browser For Gemini Protocol
     inputs.custompkgs.packages.${pkgs.system}.pc98ripper
-    inputs.custompkgs.packages.${pkgs.system}.dectalk
+    # inputs.custompkgs.packages.${pkgs.system}.dectalk
     inputs.custompkgs.packages.${pkgs.system}.hxcfloppy
     inputs.custompkgs.packages.${pkgs.system}.fluxengine
     #pc98ripper
@@ -91,7 +91,7 @@
     # perl538Packages.HTMLParser
     # perl540Packages.HTMLParser
     #claude-code # Claude code terminal AI (Optional: Client only)
-    qflipper
+    qFlipper
     hackrf
     soapyhackrf
     cubicsdr
@@ -110,7 +110,7 @@
     gimp # Great Photo Editor
     krita # digital illustration
     #frigate # ai video clipper
-    glxinfo # needed for inxi diag util
+    mesa-demos # needed for inxi diag util
     greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     htop # Simple Terminal Based System Monitor
     hyprpicker # Color Picker
@@ -133,7 +133,7 @@
     nix-index
     nushell
     nushellPlugins.query
-    nushellPlugins.net
+    # nushellPlugins.net
     inputs.backports.legacyPackages.${pkgs.system}.greaseweazle # floppy backup
     inputs.backports.legacyPackages.${pkgs.system}.yt-dlp
     libimobiledevice # ibad tools

@@ -37,7 +37,7 @@ in
     feh
     light
     blueman
-    lxde.lxsession
+    lxsession
     libnotify
     notify-desktop
     hydroxide
@@ -47,7 +47,7 @@ in
     pavucontrol
     playerctl
     mpd
-    mpc-cli
+    mpc
     ncmpcpp
     mpdris2
     stumpish
