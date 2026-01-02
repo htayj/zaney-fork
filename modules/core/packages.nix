@@ -184,5 +184,15 @@
     winetricks
     xorg.xmodmap
     xorg.xorgdocs
+    fontpreview
+    gnome-font-viewer
+    typst
+    tinymist
+    typstPackages.drafting
+    typstPackages.oasis-align
+    typstPackages.wrap-it
+    scribus
+    evince
+    mpd
   ];
 }

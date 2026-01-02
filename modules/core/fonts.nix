@@ -25,6 +25,14 @@
       roboto-mono
       symbola
       terminus_font
+      texlivePackages.missaali
+      junicode
+      texlivePackages.junicode
+      unifont
+      texlivePackages.qualitype
+      texlivePackages.bookhands
+      texlivePackages.yfonts
+      texlivePackages.addfont
     ];
   };
 }
